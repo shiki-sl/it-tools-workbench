@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/sharevb/it-tools",
+  "tag": "v2026.9.27",
+  "source_commit": "fad759efda02bc5ccf145b86732e7434d44b4ece",
+  "source_archive_url": "https://github.com/sharevb/it-tools/archive/fad759efda02bc5ccf145b86732e7434d44b4ece.tar.gz",
+  "release_asset_url": "https://github.com/sharevb/it-tools/releases/download/v2026.9.27/it-tools-2026.9.27.zip",
+  "release_asset_sha256": "2482048fb024c24a87d9a37d8bc2e0799548e74b8f75fddb656f54fa3153814a",
+  "deployment_release": "2026.9.27-20261022",
+  "license": "GPL-3.0",
+  "upstream_source_modified": false,
+  "customization_date": "2026-10-22",
+  "portable_repository_date": "2026-10-23"
+}

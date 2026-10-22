@@ -1,0 +1,16 @@
+/downloads/
+/upstream/
+/generated/
+/work/
+__pycache__/
+*.py[cod]
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.log
+backups/
+vendor/
+.env
+.env.*
+!.env.example

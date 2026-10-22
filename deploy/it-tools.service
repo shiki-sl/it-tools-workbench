@@ -1,0 +1,30 @@
+[Unit]
+Description=Private IT-Tools static workbench
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=shiki
+Group=shiki
+WorkingDirectory=/srv/it-tools
+ExecStart=/srv/it-tools/bin/caddy run --config /srv/it-tools/config/Caddyfile --adapter caddyfile
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=15
+StateDirectory=it-tools
+Environment=XDG_DATA_HOME=/var/lib/it-tools/data
+Environment=XDG_CONFIG_HOME=/var/lib/it-tools/config
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+UMask=0027
+LimitNOFILE=65536
+LimitCORE=0
+
+[Install]
+WantedBy=multi-user.target
